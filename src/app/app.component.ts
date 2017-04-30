@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
+
+    <top-navbar></top-navbar>
     
     <h1>
       {{title}}

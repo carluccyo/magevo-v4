@@ -16,6 +16,8 @@ import { PageNotFoundComponent }   from './not-found.component';
 
 import { DialogService }           from './dialog.service';
 
+import { NavbarComponent } from './components/navbar/navbar.component';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -29,6 +31,7 @@ import { DialogService }           from './dialog.service';
     AppComponent,
     ComposeMessageComponent,
     LoginComponent,
+    NavbarComponent,
     PageNotFoundComponent
   ],
   providers: [
