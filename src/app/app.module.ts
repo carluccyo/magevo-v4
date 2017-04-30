@@ -18,6 +18,8 @@ import { DialogService }           from './dialog.service';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 
+import { DashboardModule } from './modules/dashboard/dashboard.module';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     // HeroesModule,
     LoginRoutingModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DashboardModule
   ],
   declarations: [
     AppComponent,

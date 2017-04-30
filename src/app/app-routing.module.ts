@@ -8,6 +8,9 @@ import { CanDeactivateGuard }       from './can-deactivate-guard.service';
 import { AuthGuard }                from './auth-guard.service';
 import { SelectivePreloadingStrategy } from './selective-preloading-strategy';
 
+import { DashboardComponent } from './modules/dashboard/dashboard.component';
+
+
 const appRoutes: Routes = [
   {
     path: 'compose',
@@ -24,6 +27,7 @@ const appRoutes: Routes = [
     loadChildren: 'app/crisis-center/crisis-center.module#CrisisCenterModule',
     data: { preload: true }
   },
+  { path: 'dashboard', component: DashboardComponent },
   { path: '',   redirectTo: '/heroes', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
