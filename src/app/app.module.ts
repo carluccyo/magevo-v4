@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 import { AppComponent }            from './app.component';
 import { AppRoutingModule }        from './app-routing.module';
 
-// import { HeroesModule }            from './heroes/heroes.module';
+import { HeroesModule }            from './heroes/heroes.module';
 import { ComposeMessageComponent } from './compose-message.component';
 import { LoginRoutingModule }      from './login-routing.module';
 import { LoginComponent }          from './login.component';
@@ -24,7 +24,7 @@ import { DashboardModule } from './modules/dashboard/dashboard.module';
   imports: [
     BrowserModule,
     FormsModule,
-    // HeroesModule,
+    HeroesModule,
     LoginRoutingModule,
     AppRoutingModule,
     BrowserAnimationsModule,

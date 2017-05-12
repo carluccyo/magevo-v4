@@ -51,6 +51,7 @@ import { Component } from '@angular/core';
       <a routerLink="/login" routerLinkActive="active">Login</a>
       <a [routerLink]="[{ outlets: { popup: ['compose'] } }]">Contact</a>
     </nav>
+    
     <router-outlet></router-outlet>
     <router-outlet name="popup"></router-outlet>
   `
