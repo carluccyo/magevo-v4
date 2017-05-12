@@ -81,13 +81,15 @@ $brand-danger:          #d9534f !default;
 
 $black-color:           #3C4858 !default;
 
+$white-with-default:    #FFF !default;
 
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fff !default;
+$body-bg:              $white-with-default;
+
 //** Global text color on `<body>`.
 $text-color:            $gray-dark !default;
 
