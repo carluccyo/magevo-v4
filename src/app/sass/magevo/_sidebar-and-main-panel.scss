@@ -1,11 +1,11 @@
-.wrapper{
+.wrapper {
     position: relative;
     top: 0;
     height: 100vh;
 }
 
 .sidebar,
-.off-canvas-sidebar{
+.off-canvas-sidebar {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -14,34 +14,25 @@
     width: 260px;
     background: $white-color;
     @include shadow-big();
-
-    &[data-background-color="black"]{
+    &[data-background-color="black"] {
         background-color: #191919;
     }
-
-    .sidebar-wrapper{
+    .sidebar-wrapper {
         position: relative;
         height: calc(100vh - 75px);
         overflow: auto;
         width: 260px;
         z-index: 4;
-
         padding-bottom: 30px;
-
-        .dropdown .dropdown-backdrop{
+        .dropdown .dropdown-backdrop {
             display: none !important;
         }
-
-        .navbar-form{
+        .navbar-form {
             border: none;
             box-shadow: none;
         }
-
-
-
     }
-
-    .logo-tim{
+    .logo-tim {
         border-radius: 50%;
         border: 1px solid #333;
         display: block;
@@ -49,92 +40,76 @@
         width: 61px;
         float: left;
         overflow: hidden;
-
-        img{
+        img {
             width: 60px;
             height: 60px;
         }
     }
-
-    .logo-mini{
+    .logo-mini {
         display: none;
     }
-
-    .nav{
+    .nav {
         margin-top: 15px;
-
-        .caret{
+        .caret {
             margin-top: 13px;
             position: absolute;
             right: 18px;
         }
-
-        [data-toggle="collapse"] ~ div > ul > li > a{
+        [data-toggle="collapse"]~div>ul>li>a {
             padding-left: 60px;
         }
-
-        li{
-            > a{
+        li {
+            >a {
                 margin: 10px 15px 0;
                 border-radius: $border-radius-base;
                 color: $black-color;
-
                 &:hover,
-                &:focus{
+                &:focus {
                     background-color: transparent;
                     outline: none;
                 }
             }
-
-            &:first-child > a{
+            &:first-child>a {
                 margin: 0 15px;
             }
-
-            &:hover > a,
-            &.active > [data-toggle="collapse"]{
+            &:hover>a,
+            &.active>[data-toggle="collapse"] {
                 background-color: rgba(200, 200, 200, 0.2);
                 color: $black-color;
                 box-shadow: none;
             }
-
-            &.active > [data-toggle="collapse"]{
-                i{
+            &.active>[data-toggle="collapse"] {
+                i {
                     color: #a9afbb;
                 }
             }
-
-            &.active > a,
-            &.active > a i{
+            &.active>a,
+            &.active>a i {
                 color: $white-color;
             }
-
-            &.separator{
+            &.separator {
                 margin: 15px 0;
-
-                &:after{
+                &:after {
                     width: calc(100% - 30px);
                     content: "";
                     position: absolute;
                     height: 1px;
                     left: 15px;
-                    background-color: rgba(180,180,180, .3);
+                    background-color: rgba(180, 180, 180, .3);
                 }
-
-                & + li {
+                &+li {
                     margin-top: 31px;
                 }
             }
         }
-
-        p{
+        p {
             margin: 0;
             line-height: 30px;
             font-size: 14px;
             white-space: nowrap;
             @extend .animation-transition-general;
         }
-
-        i{
+        i {
             font-size: 24px;
             float: left;
             margin-right: 15px;
@@ -144,8 +119,7 @@
             color: #a9afbb;
         }
     }
-
-    .sidebar-background{
+    .sidebar-background {
         position: absolute;
         z-index: 1;
         height: 100%;
@@ -155,8 +129,7 @@
         left: 0;
         background-size: cover;
         background-position: center center;
-
-        &:after{
+        &:after {
             position: absolute;
             z-index: 3;
             width: 100%;
@@ -167,32 +140,27 @@
             opacity: .93;
         }
     }
-
-    .logo{
+    .logo {
         position: relative;
         padding: $padding-base $padding-base;
         z-index: 4;
-
-        &:after{
+        &:after {
             content: '';
             position: absolute;
             bottom: 0;
             right: 15px;
             height: 1px;
             width: calc(100% - 30px);
-            background-color: rgba(180,180,180, .3);
-
+            background-color: rgba(180, 180, 180, .3);
         }
-
-        p{
+        p {
             float: left;
             font-size: 20px;
             margin: 10px 10px;
             color: $white-color;
             line-height: 20px;
         }
-
-        .simple-text{
+        .simple-text {
             text-transform: uppercase;
             padding: $padding-small-vertical $padding-zero;
             display: block;
@@ -205,8 +173,7 @@
             overflow: hidden;
         }
     }
-
-    .logo-tim{
+    .logo-tim {
         border-radius: 50%;
         border: 1px solid #333;
         display: block;
@@ -214,29 +181,25 @@
         width: 61px;
         float: left;
         overflow: hidden;
-
-        img{
+        img {
             width: 60px;
             height: 60px;
         }
     }
-
-    .user{
+    .user {
         padding-bottom: 20px;
-        margin:20px auto 0;
+        margin: 20px auto 0;
         position: relative;
-
-        &:after{
+        &:after {
             content: '';
             position: absolute;
             bottom: 0;
             right: 15px;
             height: 1px;
             width: calc(100% - 30px);
-            background-color: rgba(180,180,180, .3);
+            background-color: rgba(180, 180, 180, .3);
         }
-
-        .photo{
+        .photo {
             width: 80px;
             height: 80px;
             overflow: hidden;
@@ -244,13 +207,11 @@
             margin: 0 auto;
             @include shadow-big();
             @extend .animation-transition-general;
-
-            img{
+            img {
                 width: 100%;
             }
         }
-
-        a{
+        a {
             text-align: center;
             color: $black-color;
             padding: $padding-base-vertical $padding-large-vertical;
@@ -260,51 +221,46 @@
             @extend .animation-transition-general;
         }
     }
-
-    &[data-background-color="black"]{
+    &[data-background-color="black"] {
         @include sidebar-background-color($gray-base, $white-color);
     }
-
-    &[data-active-color="purple"]{
+    &[data-active-color="purple"] {
         @include set-background-color-button($brand-primary);
     }
-    &[data-active-color="blue"]{
+    &[data-active-color="blue"] {
         @include set-background-color-button($brand-info);
     }
-    &[data-active-color="green"]{
+    &[data-active-color="green"] {
         @include set-background-color-button($brand-success);
     }
-    &[data-active-color="orange"]{
+    &[data-active-color="orange"] {
         @include set-background-color-button($brand-warning);
     }
-    &[data-active-color="red"]{
+    &[data-active-color="red"] {
         @include set-background-color-button($brand-danger);
     }
-    &[data-active-color="rose"]{
+    &[data-active-color="rose"] {
         @include set-background-color-button($brand-rose);
     }
-
     &[data-image]:after,
-    &.has-image:after{
+    &.has-image:after {
         opacity: .77;
     }
 }
 
-.off-canvas-sidebar{
+.off-canvas-sidebar {
     .nav {
-        > li > a,
-        > li > a:hover{
+        >li>a,
+        >li>a:hover {
             color: $white-color;
         }
-
-        > li > a:focus{
+        >li>a:focus {
             background: rgba(200, 200, 200, 0.2);
         }
     }
 }
 
-
-.main-panel{
+.main-panel {
     position: relative;
     float: right;
     overflow: auto;
@@ -312,276 +268,237 @@
     min-height: 100%;
     @include transform-translate-x(0px);
     @include transition (0.33s, cubic-bezier(0.685, 0.0473, 0.346, 1));
-
-    > .content{
+    >.content {
         margin-top: 70px;
         padding: 30px 15px;
         min-height: calc(100vh - 123px);
     }
-
-    > .footer{
+    >.footer {
         border-top: 1px solid #e7e7e7;
     }
-
-    > .navbar{
+    >.navbar {
         margin-bottom: 0;
     }
-
-    .header{
+    .header {
         margin-bottom: 30px;
-
-        .title{
+        .title {
             margin-top: 10px;
         }
     }
 }
 
-.main-panel{
+.main-panel {
     max-height: 100%;
     height: 100%;
 }
+
 .sidebar,
 .main-panel,
-.sidebar-wrapper{
-    -webkit-transition-property: top,bottom,width;
-    transition-property: top,bottom, width;
-    -webkit-transition-duration: .2s,.2s, .35s;
-    transition-duration: .2s,.2s, .35s;
-    -webkit-transition-timing-function: linear,linear,ease;
-    transition-timing-function: linear,linear,ease;
+.sidebar-wrapper {
+    -webkit-transition-property: top, bottom, width;
+    transition-property: top, bottom, width;
+    -webkit-transition-duration: .2s, .2s, .35s;
+    transition-duration: .2s, .2s, .35s;
+    -webkit-transition-timing-function: linear, linear, ease;
+    transition-timing-function: linear, linear, ease;
     -webkit-overflow-scrolling: touch;
 }
 
 // windows os settings for perfect scrollbar off
 .sidebar .sidebar-wrapper,
-.main-panel{
+.main-panel {
     .perfect-scrollbar-on &,
-    &{
+    & {
         overflow: hidden;
     }
 }
 
 // regular settings for perfect scrollbar off
-.perfect-scrollbar-off{
+.perfect-scrollbar-off {
     .sidebar .sidebar-wrapper,
-    .main-panel{
+    .main-panel {
         overflow: auto;
     }
 }
 
-.visible-on-sidebar-regular{
+.visible-on-sidebar-regular {
     display: inline-block !important;
 }
-.visible-on-sidebar-mini{
+
+.visible-on-sidebar-mini {
     display: none !important;
 }
 
 @media (min-width: $screen-md) {
-    .hover-collapse{
+    .hover-collapse {
         display: block;
         position: absolute;
         top: 0;
         left: 81px;
-        box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
         border-radius: $border-radius-large;
         color: $mdb-card-body-text;
         background: $mdb-card-body-background;
     }
-
-    .sidebar-mini{
-        .visible-on-sidebar-regular{
+    .sidebar-mini {
+        .visible-on-sidebar-regular {
             display: none !important;
         }
-        .visible-on-sidebar-mini{
+        .visible-on-sidebar-mini {
             display: inline-block !important;
         }
-
-        [data-background-color="black"]{
+        [data-background-color="black"] {
             .nav,
-            .user{
+            .user {
                 .collapse {
-                    li:not(.active){
-                        > a{
+                    li:not(.active) {
+                        >a {
                             color: $black-color;
                         }
                     }
                 }
             }
         }
-
-        .sidebar{
+        .sidebar {
             width: 80px;
             display: block;
             font-weight: 200;
             z-index: 3;
-
-            .sidebar-wrapper{
+            .sidebar-wrapper {
                 overflow: inherit;
                 width: 80px;
                 box-shadow: none;
             }
-
-            .logo{
+            .logo {
                 display: none;
             }
-
-            .logo-mini{
+            .logo-mini {
                 padding: 10px 0px;
                 display: block;
                 margin: 0px;
                 position: relative;
                 z-index: 4;
             }
-
-            .nav{
+            .nav {
                 margin-top: 20px;
-
-                li{
-
+                li {
                     &:hover,
-                    &:focus{
-                        .collapse{
+                    &:focus {
+                        .collapse {
                             @extend .hover-collapse;
                         }
                     }
-
-                    &.active > [data-toggle="collapse"] i{
+                    &.active>[data-toggle="collapse"] i {
                         color: $white-color;
                     }
-
-                    > a{
+                    >a {
                         margin: 5px 10px;
-
                         &:before,
-                        &:after{
-                            display:none;
+                        &:after {
+                            display: none;
                         }
                     }
                 }
-                p{
+                p {
                     display: none;
                 }
-
-                i{
+                i {
                     float: none;
                 }
-
-                [data-toggle="collapse"] ~ div > ul > li > a {
+                [data-toggle="collapse"]~div>ul>li>a {
                     padding: 10px 15px;
                     border-radius: 3px;
                 }
             }
-
-            &[data-active-color="purple"]{
+            &[data-active-color="purple"] {
                 @include sidebar-mini-li-active-color($brand-primary);
             }
-
-            &[data-active-color="red"]{
+            &[data-active-color="red"] {
                 @include sidebar-mini-li-active-color($brand-danger);
             }
-
-            &[data-active-color="orange"]{
+            &[data-active-color="orange"] {
                 @include sidebar-mini-li-active-color($brand-warning);
             }
-
-            &[data-active-color="rose"]{
+            &[data-active-color="rose"] {
                 @include sidebar-mini-li-active-color($brand-rose);
             }
-
-            &[data-active-color="blue"]{
+            &[data-active-color="blue"] {
                 @include sidebar-mini-li-active-color($brand-info);
             }
-
-            &[data-active-color="green"]{
+            &[data-active-color="green"] {
                 @include sidebar-mini-li-active-color($brand-success);
             }
-
-            .info{
-
-                > a{
+            .info {
+                >a {
                     height: 0;
                     padding: 0;
                     opacity: 0;
                 }
-
-                [data-toggle="collapse"] ~ div > ul > li > a {
+                [data-toggle="collapse"]~div>ul>li>a {
                     padding: 10px 15px;
                     border-radius: 3px;
                 }
             }
-
-            .user{
+            .user {
                 position: relative;
-
-                .nav{
-                    a{
+                .nav {
+                    a {
                         color: $black-color;
                     }
                 }
-
-                .photo{
+                .photo {
                     width: 50px;
                     height: 50px;
                     border-width: 2px;
                 }
-
-                &:hover{
-
-                    .collapse{
+                &:hover {
+                    .collapse {
                         @extend .hover-collapse;
                     }
                 }
             }
-
-            .collapse .nav{
+            .collapse .nav {
                 width: 180px;
                 height: auto;
                 position: relative;
                 margin: 5px 0;
-
-                > li{
-                    a{
+                >li {
+                    a {
                         margin-left: 5px;
                         margin-right: 5px;
                     }
                 }
-
-                &:before{
+                &:before {
                     border-right: 11px solid #ccc;
                     border-top: 11px solid rgba(0, 0, 0, 0);
                     border-bottom: 11px solid rgba(0, 0, 0, 0);
                     position: absolute;
                     content: "";
                     display: inline-block;
-                    left:-11px;
-                    top:9px;
+                    left: -11px;
+                    top: 9px;
                 }
-                &:after{
+                &:after {
                     border-right: 11px solid $mdb-card-body-background;
                     border-top: 11px solid rgba(0, 0, 0, 0);
                     border-bottom: 11px solid rgba(0, 0, 0, 0);
                     position: absolute;
                     content: "";
                     display: inline-block;
-                    left:-10px;
-                    top:9px;
+                    left: -10px;
+                    top: 9px;
                 }
-
             }
-
         }
-
-        .main-panel{
+        .main-panel {
             width: calc(100% - 80px);
             margin-left: 80px;
         }
-
-        .wrapper{
+        .wrapper {
             height: auto;
         }
-
         .sidebar,
-        .main-panel{
+        .main-panel {
             overflow: visible;
             max-height: none;
             height: auto;
